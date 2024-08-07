@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+:root{
+	--white: #FFFFFF;
+	--orange: #F5BA48;
+	--green: #4BF548;
+}
+.main{
+	font-size: 10px;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(#302E2E 0%, #323130 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner{
+	width: 80%;
+	height: auto;
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	transform: scale(.9);
+}
+.border-drop{
+	box-sizing: border-box;
+	border: 5px solid var(--white);
+	box-shadow: 0px 5px 15px rgba(0,0,0, 0.5), 0px 5px 10px rgba(0,0,0, 0.5) inset,
+				5px 0px 5px rgba(0,0,0, 0.5), 5px 0px 10px rgba(0,0,0, 0.5) inset;
+}
+.centrar{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.banner__icon__circule{
+	width: 25px;
+	height: 25px;
+	padding: 5px;
+	margin-left: auto;
+	border: 2px solid white;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.banner__top{
+}
+.banner__top__h1{
+	font-family: 'Just Me Again Down Here', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 7em;
+	height: 80px;
+	text-align: center;
+	filter: unset;
+	color: var(--white);
+	margin-top: 0px;
+}
+.p--lacquer{
+	font-family: 'Lacquer', cursive;
+	font-style: normal;
+	font-weight: 100;
+	color: var(--white);
+	font-size: 2em;
+}
+.banner__top__p{
+	text-align: center;
+	margin-top: 0px;
+}
+.banner__mid{
+	display: flex;
+	width: 100%;
+	margin: 80px 0px 50px 0px;
+}
+.banner__mid > *{
+	margin: auto;
+}
+.banner__mid__p{
+	margin-right: 4px;
+}
+.banner__mid__button{
+	padding: 5px 10px;
+}
+.banner__mid__button svg path{
+	fill: var(--white);
+	transition: .2s linear;
+}
+.button__play .play{
+	display: block;
+}
+.button__pause .play{
+	display: none;
+}
+.button__play .pause{
+	display: none;
+}
+.button__pause .pause{
+	display: block;
+}
+
+.button{
+	cursor: pointer;
+	background: transparent;
+	border: 3px solid var(--white);
+	box-shadow: 0px 100px 97px rgba(0, 0, 0, 0.208511), 0px 50.0488px 48.5474px rgba(0, 0, 0, 0.303118), 0px 30.1471px 29.2427px rgba(0, 0, 0, 0.373322);
+	transition: .2s linear, 0s linear transform;
+}
+.button:active{
+	transform: translate(0px, 2px);
+}
+.button:hover{
+	box-shadow:none;
+	background: var(--white);
+}
+.button:hover .button__span{
+	color: black;
+}
+.banner__mid__button{
+	padding-left: 15px;
+}
+.banner__mid__button:hover svg path{
+	fill: rgba(0, 0, 0, .7) !important;
+}
+.button__span{
+	transition: .2s linear;
+	margin: auto 5px;
+}
+.banner__bottom{
+	display: flex;
+	width: 60%;
+	margin: auto;
+} 
+.banner__bottom .icon{
+	margin: auto;
+}
+.svg--redes{
+	width: 4em;
+	height: 4em;
+	cursor: pointer;
+}
+.svg--redes path{
+	fill: var(--orange) ;
+	transition: .2s linaer;
+}
+.svg--redes:hover path{
+	fill: var(--white)!important;
+}
+
+.sgv--button{
+	width: 2.6em;
+	height: 2.6em;
+}
+
+.main__alert{
+	width: 80%;
+	padding: 20px 20px;
+	position: fixed;
+	bottom: -150px;
+	transition: .3s linear;
+	/* Rectangle 3 */
+	box-sizing: border-box;
+	background: linear-gradient(180deg, #434141 0%, #363535 100%);
+	box-shadow: 0px 100px 97px rgba(0, 0, 0, 0.208511), 0px 50.0488px 48.5474px rgba(0, 0, 0, 0.303118), 0px 30.1471px 29.2427px rgba(0, 0, 0, 0.373322), 0px 19.3198px 18.7402px rgba(0, 0, 0, 0.435), 0px 12.5216px 12.1459px rgba(0, 0, 0, 0.496678), 0px 7.88218px 7.64571px rgba(0, 0, 0, 0.566882), 0px 4.5288px 4.39294px rgba(0, 0, 0, 0.661489), 0px 1.99324px 1.93344px rgba(0, 0, 0, 0.87);
+	border-radius: 50px 50px 0px 0px;
+
+}
+.main__alert--active{
+	bottom: 0px;
+
+}
+.main__alert p{
+
+	font-family: 'Just Me Again Down Here';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2.6em;
+	text-align: center;
+	color: #FFFFFF;
+}
+.main__alert p a{
+	text-decoration: none;
+	color: var(--green);
+}
+@media(max-width: 760px) {
+	.main{
+		font-size: 8px;
+	}
+	.banner{
+		font-size: 8px;
+		width: 90%;
+		transform: scale(1);
+		padding: 20px 20px 40px 20px;
+	}
+	.banner__mid{
+		margin: 150px 0px 50px 0px;
+	}
+	.banner__mid__button {
+		font-size: 8px;
+	}
+}
+@media(max-width: 500px){
+	.main{
+		font-size: 7px;
+	}
+	.banner{
+		font-size: 7px;
+		width: 95%;
+		transform: scale(1);
+		padding: 20px 15px;
+	}
+	.banner__mid{
+		margin: 150px 10px 50px 10px;
+	}
+	.banner__mid__button {
+		font-size: 7px;
+	}
+	.banner__icon__circule{
+		width: 20px;
+		height: 20px
+	}
+}
